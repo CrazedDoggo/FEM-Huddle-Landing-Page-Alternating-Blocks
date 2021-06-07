@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://crazeddoggo.github.io/FEM-Huddle-Landing-Page-Alternating-Blocks/](https://crazeddoggo.github.io/FEM-Huddle-Landing-Page-Alternating-Blocks/)
 
 ## My process
 
@@ -44,9 +44,41 @@ Users should be able to:
 
 ### What I learned
 
+I experimented with this design with a new component based system. Instead of going through and independently adding styles to each independent section such as flex, grid, or so on, classes were created to be applied in the mark-up where fit. This avoided repetition and created more "clean" code if you will.
+
+In order to do this, I needed to plan out the site more compared to building it a simple top-down layout. I needed to analyze how a section or component should behave on multiple screen devices, and then find the similarities that all of those sections have. 
+
+```css
+.flex {
+    display: flex;
+}
+
+.flex-col,
+.footer-flex {
+    flex-flow: column;
+}
+
+.flex-jb {
+    justify-content: space-between;
+}
+
+.flex-al-c {
+    align-items: center;
+}
+
+.m-wrap,
+.wrap {
+    flex-flow: wrap;
+}
+```
+
+Is what I came up with. I decided to use flexbox for the entire site layout, and found that the above properties were the ones most commonly applied. I also created a m-wrap class for wrapping that only occurs on smaller screen resolutions. Of course, for certain elements such as my footer, I needed to give more independent styling due to how it behaved on different screen resolutions.
+
+This was a *different* way to build sites than what I'm used to, but I thorougly enjoyed it and would be comfortable with this style.
+
 ### Continued development
 
-### Useful resources
+I'll continue to use a few component based layouts where I find it needed, especially if a layout has very similar layouts for certain components. It just requires proper design, analysis, and planning.
 
 ## Author
 

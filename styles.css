@@ -175,16 +175,20 @@ footer a {
 .flex {
     display: flex;
 }
+
 .flex-col,
 .footer-flex {
     flex-flow: column;
 }
+
 .flex-jb {
     justify-content: space-between;
 }
+
 .flex-al-c {
     align-items: center;
 }
+
 .m-wrap,
 .wrap {
     flex-flow: wrap;
@@ -239,10 +243,12 @@ footer a {
         flex-flow: row nowrap;
         margin-top: 2em;
     }
+
     .contact {
         margin: 0;
         flex: 0 0 400px;
     }
+    
     .socials {
         align-self: auto;
         margin-top: 0;
