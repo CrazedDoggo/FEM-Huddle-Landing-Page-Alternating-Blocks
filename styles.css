@@ -1,10 +1,210 @@
 /*GENERAL ||*/
 
+:root {
+    --pink: hsl(322, 100%, 66%);
+
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+
+    --heading-font: 'Poppins', Arial, Helvetica, sans-serif;
+    --main-font: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    padding: 0 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper--header {
+    padding: 0 2em;
+}
+
+html {
+    font-size: 18px;
+}
+body {
+    font-family: var(--main-font);
+}
+
+img {
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+button,
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 /*TYPOGRAPHY ||*/
+
+h1, h2 {
+    font-family: var(--heading-font);
+    text-transform: capitalize;
+}
+
+p {
+    margin-top: 1em;
+}
+.hero p {
+    margin: 1.5em 0;
+}
+.copyright {
+    text-align: center;
+    font-size: .7em;
+    margin: 0;
+}
+
+footer > ul ul:first-child{
+    margin: 1em 0;
+}
+footer li {
+    margin-bottom: .8em;
+}
+
+.card h2 {
+    margin: 1em 0;
+}
+.card figcaption {
+    color: rgb(151, 151, 151);
+}
+
+footer a {
+    color: white;
+}
 
 /*COMPONENTS ||*/
 
+.bg-img {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color: var(--pale-cyan);
+}
+
+.header {
+    padding: 1em;
+}
+
+.hero {
+    padding: 1em 3em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+.logo {
+    max-width: 125px;
+    max-height: 20px;
+}
+
+.card {
+    box-shadow: 0 0 12px rgb(230, 230, 230);
+    border-radius: 10px;
+    text-align: center;
+    padding: 3em 2em;
+}
+
+.cta {
+    margin-top: 4em;
+    transform: translateY(6em);
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 -5px 8px -5px rgb(230, 230, 230);
+}
+
+.cta button {
+    margin: 1em 0;
+}
+
+.footer {
+    padding-top: 10em;
+    padding-bottom: 1em;
+    background-color: var(--dark-cyan);
+    color: white;
+}
+
+.contact,
+.contact li {
+    padding-left: 20px;
+}
+.location::marker {
+    content: url(images/icon-location.svg);
+}
+.phone::marker {
+    content: url(images/icon-phone.svg);
+}
+.email::marker {
+    content: url(images/icon-email.svg);
+}
+
+.button {
+    position: relative;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 100px;
+    padding: .5em 2em;
+    background-color: white;
+}
+.button--pink {
+    background-color: var(--pink);
+    color: white;
+}
+.button:hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    border-radius: 100px;
+}
+
 /*LAYOUT ||*/
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-flow: column;
+}
+.flex-jb {
+    justify-content: space-between;
+}
+.flex-al-c {
+    align-items: center;
+}
+.m-wrap,
+.wrap {
+    flex-flow: wrap;
+}
+
+
+.cards,
+.hero {
+    gap: 3em;
+}
+.card .col-img {
+    order: -1;
+}
+
+.socials {
+    gap: 1em;
+    align-self: center;
+    margin-top: 2em;
+}
+.socials img {
+    max-width: 35px;
+}
 
 /*QUERIES ||*/
 
