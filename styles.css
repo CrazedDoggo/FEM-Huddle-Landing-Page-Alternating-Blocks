@@ -207,9 +207,11 @@ footer a {
 }
 
 .socials {
-    gap: 1em;
     align-self: center;
     margin-top: 2em;
+}
+.socials ul {
+    gap: 1em;
 }
 .socials img {
     max-width: 35px;
