@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](design/finished-site.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/component-based-flexbox-layout-8Iitif9Q6](https://your-solution-url.com)
 - Live Site URL: [https://crazeddoggo.github.io/FEM-Huddle-Landing-Page-Alternating-Blocks/](https://crazeddoggo.github.io/FEM-Huddle-Landing-Page-Alternating-Blocks/)
 
 ## My process

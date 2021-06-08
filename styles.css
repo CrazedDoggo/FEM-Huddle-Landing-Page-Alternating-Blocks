@@ -20,7 +20,11 @@
 
 .wrapper {
     padding: 0 1em;
-    max-width: 1000px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.large-wrapper {
+    max-width: 1500px;
     margin: 0 auto;
 }
 .wrapper--header {
@@ -91,18 +95,17 @@ footer a {
 }
 
 .header {
-    padding: 1em;
+    padding: 2em 1em;
 }
 
 .hero {
-    padding: 3em;
+    padding: 3em 1em;
     margin-bottom: 6em;
     text-align: center;
 }
 
 .logo {
-    max-width: 125px;
-    max-height: 20px;
+    max-width: 150px;
 }
 
 .card {
@@ -216,6 +219,13 @@ footer a {
 
 @media(min-width: 700px) {
 
+    h1 {
+        font-size: 2.5rem;
+    }
+    .logo {
+        max-width: 200px;
+    }
+
     .bg-img {
         background-image: url(images/bg-hero-desktop.svg);
     }
@@ -223,6 +233,10 @@ footer a {
     .hero,
     .card {
         text-align: left;
+    }
+
+    .card {
+        gap: 10em;
     }
 
     .copyright {
@@ -248,7 +262,7 @@ footer a {
         margin: 0;
         flex: 0 0 400px;
     }
-    
+
     .socials {
         align-self: auto;
         margin-top: 0;
